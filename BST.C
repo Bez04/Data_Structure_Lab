@@ -1,4 +1,4 @@
-#include<iostream.h>
+#include<stdio.h>
 #include<stdlib.h>
 struct node
 {
@@ -69,6 +69,7 @@ void main()
     Postorder(root);
     getch();
 }
+
 
 
 
