@@ -1,28 +1,35 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
+int main()
 {
-int a[50],b[50],c[100],i,m,n,k;
-printf("Enter the first array:\n");
-scanf("%d",&m);
-for(i=0;i<m;i++)
+  int a[50],b[50],z[100],c,d,e,i;
+  clrscr();
+  printf("enter size first array \n");
+  scanf("%d",&c);
+  printf("enter the first array \n");
+  for(i=0;i<c;i++)
+  {
+  scanf("%d",&a[i]);
+  z[i]=a[i];
+
+  }
+  e=i;
+  printf("enter the size of second array \n");
+  scanf("%d",&d);
+  printf("enter the second array \n");
+  for(i=0;i<d;i++)
+  {
+   scanf("%d",&b[i]);
+   z[e]=b[i];
+   e++;
+}
+printf("the merged array:\n");
+for(i=0;i<e;i++)
 {
- scanf("%d",&a[i]);
- c[i]=a[i];
-}
-k=i;
-printf("Enter the Second array:\n");
-scanf("%d",&n);
-for(i=0;i<n;i++)
-{
- scanf("%d",&a[i]);
- c[k]=a[i];
- k++;
-}
-printf("The Merging Array:\n");
-for(i=0;i<k;i++)
-{
- printf("%d",c[i]);
-}
-getch();
-}
+ printf("%d\n",z[i]);
+ }
+ getch();
+ return 0;
+ }
+
+
